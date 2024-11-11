@@ -21,7 +21,7 @@
                     </div>
 
                     <div>
-                        <label for="email">Nome</label>
+                        <label for="email">E-mail</label>
                         <input type="text" name="email" placeholder="Preencha seu Email" id="email">
                     </div>
 
@@ -29,8 +29,58 @@
                         <label for="cpf">cpf</label>
                         <input type="number" name="cpf" placeholder="Preeche seu CPF" id="cpf">
                     </div>
+
+                    <div>
+                        <label for="telefone">telefone</label>
+                        <input type="tel" name="telefone" placeholder="Preeche seu telefone" id="telefone" required pattern="[0-9]{2} [0-9]{5} - [0-9]{4}">
+                    </div>
+
+                    <div>
+                        <label for="estados">Estados</label>
+                        <select>
+                            <option value="sp">sp</option>
+                            <option value="rj">rj</option>
+                            <option value="ac">ac</option>
+                        </select>
+                    </div>
                 </div>
             </fieldset>
+
+            <fieldset>
+                <legend>informações</legend>
+
+                <label for="site">Site:</label>
+                <input type="url" id="site" name="site">
+
+                <label for="senha">senha:</label>
+                <input type="password" id="senha" name="senha">
+
+                <label for="data">data de nascimente</label>
+                <input type="date" id="data" name="data">
+            </fieldset>
+
+            <fieldset>
+                <legend>informações</legend>
+                <input type="checkbox" name="autorização">
+                <label for="autorização">concordo que autorize esses dados</label>
+
+                <label for="documento"> Documento PDF:</label>
+                <input type="file" id="documento" name="documento" accept="document/pdf"/>
+                <!-- ////////////////////////////////////////////// -->
+
+
+                <input type="radio" name="robo" id="sourobo">
+                <label for="sim">sou um robô</label>
+
+                <input type="radio" name="robo" id="naosourobo">
+                <label for="nao">Não sou um robo</label>
+
+                <input type="radio" name="robo" id="talveseuseja">
+                <label for="talvez">talvez eu seja</label>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+            <button type="button" value="Enviar">Enviar</button>
         </form>
     </main>
     <footer>
